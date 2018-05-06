@@ -1,0 +1,8 @@
+.Add {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Add:Hover {
+  cursor: pointer;
+}
