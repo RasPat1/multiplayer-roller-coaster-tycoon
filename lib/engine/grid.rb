@@ -16,9 +16,4 @@ class Grid
       }
     }
   end
-
-  def size
-    grid.length
-  end
-
 end
