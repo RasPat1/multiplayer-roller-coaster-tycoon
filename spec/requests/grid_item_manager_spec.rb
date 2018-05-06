@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'heartbeat' do
+RSpec.describe 'item manager reqests' do
   params = {
     game_id: 1,
     item: 'kiosk',
