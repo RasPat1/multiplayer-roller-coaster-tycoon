@@ -1,0 +1,15 @@
+{
+  "name": "tycoon",
+  "version": "0.1.0",
+  "engines": {
+    "node": "9.10.1"
+  },
+  "dependencies": {
+    "yarn": "1.5.1"
+  },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  }
+}
