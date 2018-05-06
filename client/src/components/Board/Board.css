@@ -15,3 +15,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.grid-cell:hover {
+  background-color: blue;
+}
