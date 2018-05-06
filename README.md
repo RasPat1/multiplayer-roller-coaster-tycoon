@@ -1,4 +1,4 @@
--Roller Coaster Tycoon
+#Roller Coaster Tycoon
 ----------------------
 This is a roller coaster Tycoon clone. Multiple people can build an amusement
 park together. Uses websockets and rails...
