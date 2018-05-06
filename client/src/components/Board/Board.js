@@ -5,7 +5,7 @@ const BOARDSIZE = 10
 
 const gridStyle = {
   gridTemplateRows: `repeat(${BOARDSIZE}, 20px)`,
-  gridTemplateColumns: `repeat(${BOARDSIZE}, 20px)`,
+  gridTemplateColumns: `repeat(${BOARDSIZE}, 20px)`
 }
 
 const calculateCellColumn = pos => pos < BOARDSIZE ? pos : pos % BOARDSIZE
