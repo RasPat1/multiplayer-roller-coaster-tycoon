@@ -13,7 +13,7 @@ class WithMouseCoordinates extends Component {
   render() {
     const { x, y } = this.state
     return(
-      <div onMouseMove={e => this.onMouseMove(e)}>
+      <div onMouseMove={e => this.onMouseMove(e)} style={{ height: '100%' }}>
         {this.props.render(x, y)}
       </div>
     )
