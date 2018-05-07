@@ -16,10 +16,12 @@ class Game
     item = Item.new(item_type)
 
     raise Errors::SpaceUnavailbleError.new unless can_build?(x,y)
-    raise Errors::NotEnoughMoneyError.new unless can_afford?(money, item)
+    raise Errors::NotEnoughMoneyError.new unless can_afford?(item)
 
     # currently all items are 1x1
     grid.grid[x][y] = item
+
+    # This has to be marked as self.money not money and i'm not sure why
     self.money -= item.cost
   end
 
@@ -42,7 +44,7 @@ class Game
     space_empty?(x,y)
   end
 
-  def can_afford?(money, item)
+  def can_afford?(item)
     money >= item.cost
   end
 
@@ -51,8 +53,7 @@ class Game
   end
 
   def out_of_bounds?(x,y)
-    x < 0 || x > grid.width || y < 0 || y > grid.length
+    x < 0 || x > grid.length || y < 0 || y > grid.width
   end
-
 
 end
